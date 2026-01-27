@@ -1,0 +1,15 @@
+<div class="todos">
+    @for(todo of todos; track $index){
+    <div class="todo d-flex align-items-center gap-3 mb-2">
+        <div class="id">{{ $index }}</div>
+
+        <div class="content" [class.text-decoration-line-through]="todo.completed">
+            {{ todo.content }}
+        </div>
+
+        <button class="btn btn-sm btn-success me-2" (click)="toggleDone($index)">Done</button>
+        <button class="btn btn-sm btn-danger" (click)="deleteTodo($index)">Delete</button>
+
+    </div>
+    }
+</div>
