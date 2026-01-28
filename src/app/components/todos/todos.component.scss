@@ -1,5 +1,9 @@
-.todos{
-    .todo{
+.todos {
+    .todo {
         user-select: none;
+    }
+
+    input {
+        flex: 1;
     }
 }

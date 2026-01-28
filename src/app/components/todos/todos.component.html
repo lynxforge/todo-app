@@ -1,4 +1,14 @@
 <div class="todos">
+
+    <form (submit)="addTodo()" class="d-flex gap-2 mb-3">
+        <input [(ngModel)] = "newTodo"
+        name = "todoInput"
+        class = "form-control"
+        placeholder="Add new todo..."
+        />
+        <button class="btn btn-primary" type="submit">Add</button>
+    </form>
+
     @for(todo of todos; track $index){
     <div class="todo d-flex align-items-center gap-3 mb-2">
         <div class="id">{{ $index }}</div>
