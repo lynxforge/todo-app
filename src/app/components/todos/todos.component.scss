@@ -3,12 +3,17 @@
         user-select: none;
         transition: background-color 0.2s ease;
 
-        &:hover{
+        &:hover {
             background-color: #f0f0f0;
         }
     }
 
-    .id{
+    .left {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .id {
         width: 18px;
         height: 18px;
         border-radius: 50%;
@@ -22,7 +27,7 @@
         flex-shrink: 0;
     }
 
-    .content.completed{
+    .content.completed {
         text-decoration: line-through;
         opacity: 0.6;
     }
